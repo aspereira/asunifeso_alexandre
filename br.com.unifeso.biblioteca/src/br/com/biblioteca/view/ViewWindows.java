@@ -645,7 +645,7 @@ public class ViewWindows extends javax.swing.JFrame {
         for (Aluno a : alunos.retornarAlunos()){
             txtAlunos.append("Matrícula: " + a.getMatricula() + "\n");
             txtAlunos.append("Nome: " + a.getNome() + "\n");
-            txtAlunos.append("Data de Nasc.: " + a.getData() + "\n");
+            txtAlunos.append("Data de Nasc.: " + a.getDataNasc() + "\n");
             txtAlunos.append("------------------------\n");
         }
     }//GEN-LAST:event_btnLocalizarAlunosActionPerformed
@@ -654,7 +654,7 @@ public class ViewWindows extends javax.swing.JFrame {
         Aluno aluno = new Aluno();
         aluno.setMatricula(txtMatricula.getText());
         aluno.setNome(txtNomeAluno.getText());
-        aluno.setData(txtDataNascAluno.getText());
+        aluno.setDataNasc(txtDataNascAluno.getText());
         
         int ano = aluno.pegarAno();
         
@@ -675,7 +675,7 @@ public class ViewWindows extends javax.swing.JFrame {
         Funcionario funcionario = new Funcionario();
         funcionario.setCpf(txtCPFFuncionario.getText());
         funcionario.setNome(txtNomeFuncionario.getText());
-        funcionario.setData(txtDataNascFuncionario.getText());
+        funcionario.setDataNasc(txtDataNascFuncionario.getText());
         
         int ano = funcionario.pegarAno();
         
@@ -697,7 +697,7 @@ public class ViewWindows extends javax.swing.JFrame {
         for (Funcionario f : funcionarios.retornarFuncionarios()){
             txtFuncionarios.append("CPF: " + f.getCpf() + "\n");
             txtFuncionarios.append("Nome: " + f.getNome() + "\n");
-            txtFuncionarios.append("Data de Nasc.: " + f.getData() + "\n");
+            txtFuncionarios.append("Data de Nasc.: " + f.getDataNasc() + "\n");
             txtFuncionarios.append("------------------------\n");
         }
     }//GEN-LAST:event_btnLocalizarFuncionariosActionPerformed

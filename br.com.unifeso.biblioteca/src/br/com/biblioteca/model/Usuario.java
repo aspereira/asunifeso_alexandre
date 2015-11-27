@@ -2,7 +2,7 @@ package br.com.biblioteca.model;
 
 public class Usuario {
     private String nome;
-    private String data;
+    private String dataNasc;
 
     /**
      * @return the nome
@@ -21,19 +21,19 @@ public class Usuario {
     /**
      * @return the data
      */
-    public String getData() {
-        return data;
+    public String getDataNasc() {
+        return dataNasc;
     }
 
     /**
      * @param data the data to set
      */
-    public void setData(String data) {
-        this.data = data;
+    public void setDataNasc(String data) {
+        this.dataNasc = data;
     }
     
     public int pegarAno() {
-        String dataQueb[] = data.split("/");
+        String dataQueb[] = dataNasc.split("/");
         return Integer.parseInt(dataQueb[2]);
     }
 }
